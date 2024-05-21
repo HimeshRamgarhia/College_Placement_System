@@ -1,0 +1,65 @@
+/* Shared styles for both students_details.jsp and placed_students.jsp */
+.top-buttons {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffffff; /* Background color for the buttons container */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.top-buttons button {
+    display: inline-block; /* Set display to inline-block */
+    padding: 8px 16px; /* Adjust padding for button size */
+    background-color: #4CAF50; /* Background color for buttons */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-buttons button:hover {
+    background-color: #45a049;
+}
+
+.process-button {
+    position: fixed;
+    top: 10px;
+    right: calc(10px + 17px); /* Adjusted for scrollbar width */
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Remaining styles specific to students_details.jsp */
+#students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Adjust margin for spacing between buttons and table */
+}
+
+#students-table th {
+    background-color: #2196F3;
+    color: white;
+    position: sticky;
+    top: 50px; /* Adjust top position to leave space for buttons */
+}
+
+#students-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#students-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+#students-table th,
+#students-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
